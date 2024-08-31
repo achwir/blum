@@ -18,15 +18,81 @@ Gunakan Link ini (ABIS KEKNYA)
 
 ## Installation
 
-Install with python
+Install with VPS/termux
+
+VPS
 
 ```bash
-  1. Download Python 3.10+
-  2. Install Module (pip install requests colorama)
-  3. Buka Bot Blum di PC (Telegram Web / Desktop)
-  4. Ambil query_id 
-  5. Caranya > inspek elemen > terus ke application > storage (session storage) > pilih telegram.blum.codes
-  6. Pilih __telegram_initparam > tgwebappdata ambil query_id=xxx (ambil semua) kecuali tgwebappnya
+  apt update && apt upgrade
+```
+
+```bash
+  apt install git
+```
+
+```bash
+  apt install nodejs
+```
+
+```bash
+  apt install python3
+```
+
+```bash
+  git clone https://github.com/achwir/blum
+```
+
+```bash
+  python3 -m venv tomarket
+```
+
+```bash
+  source tomarket/bin/activate
+```
+
+```bash
+  pip install -r requirements.txt
+```
+
+TERMUX
+
+```bash
+  pkg update && pkg upgrade
+```
+
+```bash
+  pkg install git
+```
+
+```bash
+  pkg install nodejs
+```
+
+```bash
+  pkg install python
+```
+
+```bash
+  git clone https://github.com/achwir/blum
+```
+
+```bash
+  python -m venv tomarket
+```
+
+```bash
+  source tomarket/bin/activate
+```
+
+```bash
+  pip install -r requirements.txt
+```
+
+```bash
+  1. Buka Bot Blum di PC (Telegram Web / Desktop)
+  2. Ambil query_id 
+  3. Caranya > inspek elemen > terus ke application > storage (session storage) > pilih telegram.blum.codes
+  4. Pilih __telegram_initparam > tgwebappdata ambil query_id=xxx (ambil semua) kecuali tgwebappnya
   5. Paste di tgwebapp.txt
 ```
 
@@ -40,7 +106,4 @@ Install with python
 - Auto Checkin Daily
 - Multi Account
 
-## Screenshots
-
-![App Screenshot](https://i.ibb.co.com/BBJtKwp/Cuplikan-layar-2024-06-01-190624.png)
-
+## SOURCE : https://github.com/LFG-AAI/taptap/tree/main/files/Blum%20Crypto
