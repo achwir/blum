@@ -74,6 +74,12 @@ TERMUX
   pip install requests colorama
 ```
 
+## Untuk memasukkan query nya
+```bash
+  nano tgwebapp.txt
+```
+
+## Cara mencari query
 ```bash
   1. Buka Bot Blum di PC (Telegram Web / Desktop)
   2. Ambil query_id 
