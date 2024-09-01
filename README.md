@@ -88,6 +88,10 @@ TERMUX
   5. Paste di tgwebapp.txt
 ```
 
+## Running bot
+```bash
+  python blum.py
+```
 
 ## Features
 
