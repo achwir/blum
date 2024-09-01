@@ -29,6 +29,10 @@ VPS
 ```
 
 ```bash
+  cd blum
+```
+
+```bash
   python3 -m venv tomarket
 ```
 
@@ -60,6 +64,10 @@ TERMUX
 
 ```bash
   git clone https://github.com/achwir/blum
+```
+
+```bash
+  cd blum
 ```
 
 ```bash
