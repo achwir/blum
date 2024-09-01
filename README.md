@@ -37,7 +37,7 @@ VPS
 ```
 
 ```bash
-  pip install -r requirements.txt
+  pip install requests colorama
 ```
 
 TERMUX
