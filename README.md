@@ -37,7 +37,7 @@ VPS
 ```
 
 ```bash
-  source tomarket/bin/activate
+  source blum/bin/activate
 ```
 
 ```bash
