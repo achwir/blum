@@ -33,7 +33,7 @@ VPS
 ```
 
 ```bash
-  python3 -m venv tomarket
+  python3 -m venv blum
 ```
 
 ```bash
@@ -71,7 +71,7 @@ TERMUX
 ```
 
 ```bash
-  python -m venv tomarket
+  python -m venv blum
 ```
 
 ```bash
