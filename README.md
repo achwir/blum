@@ -33,15 +33,7 @@ VPS
 ```
 
 ```bash
-  python3 -m venv blum
-```
-
-```bash
-  source blum/bin/activate
-```
-
-```bash
-  pip install requests colorama
+  python3 -m pip install requests colorama
 ```
 
 TERMUX
@@ -71,15 +63,7 @@ TERMUX
 ```
 
 ```bash
-  python -m venv blum
-```
-
-```bash
-  source blum/bin/activate
-```
-
-```bash
-  pip install requests colorama
+  python -m pip install requests colorama
 ```
 
 ## Untuk memasukkan query nya
