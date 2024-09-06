@@ -702,17 +702,17 @@ while True:
                     break
                 # print(f"\r{Fore.GREEN+Style.BRIGHT}[ Play Game ] : Game Response: {game_response}", flush=True)
                 time.sleep(10)
-                claim_response = claim_game(token, game_response['gameId'], random.randint(256, 278))
+                claim_response = claim_game(token, game_response['gameId'], random.randint(190, 210))
                 while True:
                     if claim_response is None:
                         print(f"\r{Fore.RED+Style.BRIGHT}[ Play Game ] : Gagal mengklaim game, mencoba lagi...", flush=True)
-                        claim_response = claim_game(token, game_response['gameId'], random.randint(256, 278))
+                        claim_response = claim_game(token, game_response['gameId'], random.randint(190, 210))
                         time.sleep(5)
                     elif claim_response.text == '{"message":"game session not finished"}':
                         time.sleep(5)  # Tunggu sebentar sebelum mencoba lagi
                         random_color = random.choice(available_colors)
                         print(f"\r{random_color+Style.BRIGHT}[ Play Game ] : Game belum selesai.. mencoba lagi", flush=True)
-                        claim_response = claim_game(token, game_response['gameId'], random.randint(256, 278))
+                        claim_response = claim_game(token, game_response['gameId'], random.randint(190, 210))
                         if claim_response is None:
                             print(f"\r{Fore.RED+Style.BRIGHT}[ Play Game ] : Gagal mengklaim game, mencoba lagi...", flush=True)
                     elif claim_response.text == '{"message":"game session not found"}':
