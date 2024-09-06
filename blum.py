@@ -249,7 +249,7 @@ def get_user_info(token):
         'origin': 'https://telegram.blum.codes',
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0'
     }
-    response = requests.get('https://gateway.blum.codes/v1/user/me', headers=headers)
+    response = requests.get('https://user-domain.blum.codes/api/v1/user/me', headers=headers)
     if response.status_code == 200:
         return response.json()
     else:
@@ -372,7 +372,7 @@ def start_farming(token):
     return None
 
 def refresh_token(old_refresh_token):
-    url = 'https://gateway.blum.codes/v1/auth/refresh'
+    url = 'https://user-domain.blum.codes/api/v1/auth/refresh'
     headers = {
         'accept': 'application/json, text/plain, */*',
         'accept-language': 'en-US,en;q=0.9',
@@ -412,7 +412,7 @@ def check_balance_friend(token):
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0'
     }
     try:
-        response = requests.get('https://gateway.blum.codes/v1/friends/balance', headers=headers)
+        response = requests.get('https://user-domain.blum.codes/api/v1/friends/balance', headers=headers)
         return response.json()
     except requests.exceptions.ConnectionError as e:
         print(f"{Fore.RED+Style.BRIGHT}Gagal mendapatkan saldo teman karena masalah koneksi: {e}")
@@ -437,7 +437,7 @@ def claim_balance_friend(token):
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0'
     }
     try:
-        response = requests.post('https://gateway.blum.codes/v1/friends/claim', headers=headers)
+        response = requests.post('https://user-domain.blum.codes/api/v1/friends/claim', headers=headers)
         return response.json()
     except requests.exceptions.ConnectionError as e:
         print(f"{Fore.RED+Style.BRIGHT}Gagal mengklaim saldo teman karena masalah koneksi: {e}")
