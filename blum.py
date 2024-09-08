@@ -35,7 +35,7 @@ def parse_arguments():
 
 while True:
     print(Fore.YELLOW + Style.BRIGHT + f"Select Tribe: ")
-    print(Fore.YELLOW + Style.BRIGHT + f"1. Airdrop Finder")
+    print(Fore.YELLOW + Style.BRIGHT + f"1. Airdrop")
     print(Fore.YELLOW + Style.BRIGHT + f"2. Custom Tribe (Input your tribe id)")
     tribe_selection = input(Fore.YELLOW + Style.BRIGHT + "Select Tribe: ").strip()
     if tribe_selection == "1":
